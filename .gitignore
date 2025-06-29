@@ -1,0 +1,15 @@
+# Node / Eleventy
+node_modules/
+_site/
+dist/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+
