@@ -15,7 +15,6 @@ if ! command -v nvm &>/dev/null; then
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 fi
 export NVM_DIR="$HOME/.nvm"
-# shellcheck source=/dev/null
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 log "Installing latest Node LTS"
 nvm install --lts
@@ -25,11 +24,8 @@ npm install -g netlify-cli npm-check-updates serve
 
 # ── Dotfile symlinks ───────────────────────────
 log "Linking dotfiles"
-ln -svf "$PWD/dotfiles/.bashrc"              "$HOME/.bashrc"
 mkdir -p "$HOME/.config/Code/User"
 ln -svf "$PWD/dotfiles/vscode/settings.json" "$HOME/.config/Code/User/settings.json"
 
 log "✅  Done — reload your shell"
 exec "$SHELL"
-
-
