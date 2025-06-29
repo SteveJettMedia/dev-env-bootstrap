@@ -113,7 +113,47 @@ dev-env-bootstrap/
    └─ vscode/
       └─ settings.json
 ```
+## 🚀 Create a New Eleventy Site
 
+Once you’ve cloned **dev-env-bootstrap**, you can spin up a fresh Eleventy project with:
+
+```bash
+# If you’ve linked the helper script globally (see bin/newsite)
+newsite <directory> [“Site Name”] [#BrandColor] [domain.com]
+Or call it directly:
+
+bash
+Copy
+Edit
+./scripts/create-eleventy-site.sh <directory> [“Site Name”] [#BrandColor] [domain.com]
+Parameters
+
+<directory> Where to create the new project (e.g. acme-corp)
+
+“Site Name” (Optional) Display name used in templates (default: “My Site”)
+
+#BrandColor (Optional) Primary brand color in hex (default: #ff6a3e)
+
+domain.com (Optional) Production URL (default: example.com)
+
+What this does
+
+Clones the Eleventy starter into <directory>
+
+Populates src/_data/site.json with your site name, color, domain, and current year
+
+Copies all core page stubs into src/pages/
+
+Ensures netlify.toml is present for instant deploy on Netlify
+
+Prints instructions to run:
+
+bash
+Copy
+Edit
+cd <directory>
+npm install
+npm run dev
 ---
 
 ## Contributing
