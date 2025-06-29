@@ -1,4 +1,5 @@
 
+
 # Dev-Env Bootstrap
 
 One‑stop repo to install & configure my Linux dev stack  
@@ -13,10 +14,15 @@ bash <(curl -fsSL \
   https://raw.githubusercontent.com/SteveJettMedia/dev-env-bootstrap/main/scripts/bootstrap.sh)
 ```
 
+Zero Click Curl One Liner
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/SteveJettMedia/dev-env-bootstrap/main/scripts/bootstrap.sh)
+```
+
 ## Quick install
 
 ```bash
-git clone https://github.com/<YOUR-USER>/dev-env-bootstrap.git
+git clone https://github.com/<SteveJettMedia>/dev-env-bootstrap.git
 cd dev-env-bootstrap
 bash scripts/bootstrap.sh
 ```
