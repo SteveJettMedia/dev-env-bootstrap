@@ -6,6 +6,13 @@ One‑stop repo to install & configure my Linux dev stack
 
 ---
 
+## Auto Installer
+
+```bash
+bash <(curl -fsSL \
+  https://raw.githubusercontent.com/SteveJettMedia/dev-env-bootstrap/main/scripts/bootstrap.sh)
+```
+
 ## Quick install
 
 ```bash
