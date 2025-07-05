@@ -20,7 +20,6 @@ extensions=(
   gruntfuggly.todo-tree
   alefragnani.project-manager
   waderyan.rollupjs
-  eg2.vscode-npm-script
   figma.figma-vscode-extension
   kisstkondoros.vscode-gutter-preview
   CoenraadS.bracket-pair-colorizer-2
